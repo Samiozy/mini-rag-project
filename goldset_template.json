@@ -1,0 +1,34 @@
+{
+  "about": "TEMPLATE — copy this file to goldset.json and replace the examples with 8 questions about YOUR my_kb/ documents: 6 with answerable=true and 2 with answerable=false. The notebook warns you if an evidence phrase is not in your documents word-for-word.",
+  "kb_files": ["list your my_kb filenames here"],
+  "how_to_fill_this_in": {
+    "qid": "Q1 .. Q8",
+    "question": "how someone would really ask it, not a keyword search",
+    "source": "which my_kb file answers it (null for the 2 unanswerable ones)",
+    "evidence": "one short phrase copied WORD-FOR-WORD from that file. Keep it under ~80 characters and on one line, or a small chunk size will cut it in half. Leave empty for unanswerable questions.",
+    "answerable": "true for 6 questions, false for 2"
+  },
+  "questions": [
+    {
+      "qid": "Q1",
+      "question": "EXAMPLE — delete this. What does the cloud shared responsibility model make the customer responsible for?",
+      "source": "your_document.md",
+      "evidence": ["a short phrase copied word-for-word from your_document.md"],
+      "answerable": true
+    },
+    {
+      "qid": "Q7",
+      "question": "EXAMPLE — delete this. The OFF-TOPIC question: something clearly outside cybersecurity, e.g. What is the capital of France?",
+      "source": null,
+      "evidence": [],
+      "answerable": false
+    },
+    {
+      "qid": "Q8",
+      "question": "EXAMPLE — delete this. The SOUNDS-RIGHT-BUT-ABSENT question: squarely on your topic and phrased like your other questions, but genuinely not covered by any file in my_kb/. This is the one that tests whether your bot knows what it does not know — choose it on purpose and say why in your report.",
+      "source": null,
+      "evidence": [],
+      "answerable": false
+    }
+  ]
+}
